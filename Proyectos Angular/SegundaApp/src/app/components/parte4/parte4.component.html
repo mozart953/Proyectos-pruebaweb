@@ -1,0 +1,18 @@
+<button [type]="tipo" [disabled]="desactivado">variable: {{titulo}}</button>
+<button (click)="desactivado =!desactivado">Cambiar desactivado</button>
+<input type="text" [(ngModel)]="titulo" (ngModelChange)="log($event)">
+
+<select [(ngModel)]="seleccion">
+    <option value="opcion1">opcion1</option>
+    <option value="opcion2">opcion2</option>
+</select>
+
+<h1>Has seleccionado: {{seleccion}}</h1>
+
+<!--<select [value]="seleccion2" (change)="seleccion2 = $event.target.value">
+    <option value="opcion3">opcion3</option>
+    <option value="opcion4">opcion4</option>
+</select>
+
+<h1>Has seleccionado: {{seleccion2}}</h1>-->
+<h2></h2>
